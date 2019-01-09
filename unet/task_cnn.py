@@ -29,7 +29,7 @@ def main(_):
   th.overwrite = True
   th.gather_note = True
   th.summary = False
-
+  #
   th.train = False
   th.mark = 'unet_{}'.format('x')
   # set_config_alpha(th)
@@ -62,7 +62,7 @@ def set_config_alpha(th):
   th.gather_note = True
   th.summary = False
 
-  th.train = False
+  # th.train = False
   th.mark = 'unet_{}'.format('x')
 
 

@@ -1,0 +1,32 @@
+[19-Jan-09 14:40:46] Model built successfully
+Structure:
+[19-Jan-09 14:40:46] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-09 14:40:49] Model launched
+Configurations:
+.. epoch: 30
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-09 14:53:30] End training after 15 rounds (15.0 total)
+Record: 0.921, Mean Record: 0.919
+-------------------------------------------------------------------------------
+[19-Jan-09 14:26:55] Model built successfully
+Structure:
+[19-Jan-09 14:26:55] Total params: 16480133
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-09 14:26:57] Model launched
+Configurations:
+.. epoch: 30
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. mark: unet_x02
+.. learning_rate: 3e-05
+[19-Jan-09 14:36:44] End training after 13 rounds (13.0 total)
+Record: 0.922, Mean Record: 0.922
+-------------------------------------------------------------------------------
