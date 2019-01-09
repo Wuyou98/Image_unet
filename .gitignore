@@ -1,5 +1,7 @@
 # Ignore PyCharm files
 .idea/
+# Ignore data image
+data/
 
 # Ignore byte-compiled files
 *.pyc
@@ -8,7 +10,7 @@
 # Ignore data / checkpoint / log files
 *examples
 #examples/*/data
-records
+records_unet_alpha
 #*[Dd]ata*/
 *checkpoint*/
 *[Ll]og*/

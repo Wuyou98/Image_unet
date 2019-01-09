@@ -30,7 +30,7 @@ def main(_):
   th.gather_note = True
   th.summary = False
 
-  th.train = False
+  # th.train = False
   th.mark = 'unet_{}'.format('x')
   core.activate()
 
