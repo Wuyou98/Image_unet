@@ -16,24 +16,6 @@ import cv2
 from keras.preprocessing.image import ImageDataGenerator
 
 
-Sky = [128, 128, 128]
-Building = [128, 0, 0]
-Pole = [192, 192, 128]
-Road = [128, 64, 128]
-Pavement = [60, 40, 222]
-Tree = [128, 128, 0]
-SignSymbol = [192, 128, 128]
-Fence = [64, 64, 128]
-Car = [64, 0, 128]
-Pedestrian = [64, 64, 0]
-Bicyclist = [0, 128, 192]
-Unlabelled = [0, 0, 0]
-
-COLOR_DICT = np.array([Sky, Building, Pole, Road, Pavement, Tree,
-                       SignSymbol, Fence, Car, Pedestrian, Bicyclist,
-                       Unlabelled])
-
-
 def adjustData(img, mask, flag_multi_class, num_class):
   if flag_multi_class:
     img = img / 255
@@ -57,13 +39,6 @@ def adjustData(img, mask, flag_multi_class, num_class):
     mask[mask <= 0.5] = 0
   return img, mask
 
-def labelVisualize(num_class, img, color_dict=COLOR_DICT):
-  img = img[:, :, 0] if len(img.shape) == 3 else img
-  img_out = np.zeros(img.shape + (3,))
-  for i in range(num_class):
-    img_out[img == i, :] = color_dict[i]
-  return img_out / 255
-
 
 class Membrane(ImageDataAgent):
   DATA_NAME = 'Membrane'
@@ -79,18 +54,11 @@ class Membrane(ImageDataAgent):
     features = features.reshape(features.shape )
     label = label.reshape(label.shape)
 
-    # print(features.shape)
-    # Your code here:
-    m = np.random.randint(0, 8)
-    n = np.random.randint(0,9)
     data_generator = ImageDataGenerator(
       rotation_range=0.2,
       width_shift_range=0.05, height_shift_range=0.05,
       shear_range=0.05, zoom_range=0.05, horizontal_flip=False,
       fill_mode='nearest')
-
-    # x_batch, y_batch = next(data_generator.flow(
-    #   features, label, batch_size=features.shape[0]))
 
     x_batch, y_batch = next(data_generator.flow(
       features, label, batch_size=features.shape[0]))
@@ -104,9 +72,6 @@ class Membrane(ImageDataAgent):
       zs.append(xx)
       zs.append(yy)
 
-    # data_set.features = x_batch.reshape(x_batch.shape[:-1])
-    # data_set.targets = y_batch.reshape(y_batch.shape[:-1])
-
     X = np.concatenate(xs)
     Y = np.concatenate(ys)
     Z = np.concatenate(zs)
@@ -114,11 +79,6 @@ class Membrane(ImageDataAgent):
     data_set.features = X.reshape(x_batch.shape)
     data_set.targets = Y.reshape(y_batch.shape)
     Z = Z.reshape([-1, 512, 512])
-    # print(data_set.targets.shape)
-
-    # from tframe.data.images.image_viewer import ImageViewer
-    # viewer = ImageViewer(DataSet(features=Z))
-    # viewer.show()
 
     return data_set
 

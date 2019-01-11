@@ -1,3 +1,102 @@
+[19-Jan-11 14:25:17] Model built successfully
+Structure:
+[19-Jan-11 14:25:17] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-11 14:25:21] Model launched
+Configurations:
+.. epoch: 3
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. warm_up_thres: 0
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-11 14:28:16] End training after 3 rounds (3.0 total)
+Record: 0.903, Mean Record: 0.897
+-------------------------------------------------------------------------------
+[19-Jan-10 19:30:20] Model built successfully
+Structure:
+[19-Jan-10 19:30:20] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-10 19:30:24] Model launched
+Configurations:
+.. epoch: 3
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. warm_up_thres: 0
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-10 19:33:10] End training after 3 rounds (3.0 total)
+Record: 0.905, Mean Record: 0.895
+-------------------------------------------------------------------------------
+[19-Jan-10 16:05:48] Model built successfully
+Structure:
+[19-Jan-10 16:05:48] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-10 16:05:51] Model launched
+Configurations:
+.. epoch: 2
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. warm_up_thres: 0
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-10 16:07:34] End training after 2 rounds (2.0 total)
+Record: 0.888, Mean Record: 0.876
+-------------------------------------------------------------------------------
+[19-Jan-10 16:03:46] Model built successfully
+Structure:
+[19-Jan-10 16:03:46] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-10 16:03:50] Model launched
+Configurations:
+.. epoch: 2
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-10 16:05:32] End training after 2 rounds (2.0 total)
+Record: 0.900, Mean Record: 0.896
+-------------------------------------------------------------------------------
+[19-Jan-10 15:56:11] Model built successfully
+Structure:
+[19-Jan-10 15:56:11] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-10 15:56:14] Model launched
+Configurations:
+.. epoch: 1
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-10 15:57:07] End training after 1 rounds (1.0 total)
+Record: 0.871, Mean Record: 0.823
+-------------------------------------------------------------------------------
+[19-Jan-10 15:47:15] Model built successfully
+Structure:
+[19-Jan-10 15:47:15] Total params: 31031685
+Feedforward: input[256x256x1] => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu -> maxpool(128x128x64) => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu -> maxpool(64x64x128) => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu -> maxpool(32x32x256) => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu -> dropout -> maxpool(16x16x512) => conv2d(3x3x1024) -> relu => conv2d(3x3x1024) -> relu -> dropout => deconv2d(2x2x512) -> relu -> concat => conv2d(3x3x512) -> relu => conv2d(3x3x512) -> relu => deconv2d(2x2x256) -> relu -> concat => conv2d(3x3x256) -> relu => conv2d(3x3x256) -> relu => deconv2d(2x2x128) -> relu -> concat => conv2d(3x3x128) -> relu => conv2d(3x3x128) -> relu => deconv2d(2x2x64) -> relu -> concat => conv2d(3x3x64) -> relu => conv2d(3x3x64) -> relu => conv2d(3x3x2) -> relu => conv2d(1x1x1) -> sigmoid => output[256x256x1]
+[19-Jan-10 15:47:18] Model launched
+Configurations:
+.. epoch: 3
+.. batch_size: 2
+.. shuffle: True
+.. early_stop: True
+.. patience: 5
+.. mark: unet_x01
+.. learning_rate: 0.0001
+[19-Jan-10 15:49:51] End training after 3 rounds (3.0 total)
+Record: 0.904, Mean Record: 0.899
+-------------------------------------------------------------------------------
 [19-Jan-09 14:40:46] Model built successfully
 Structure:
 [19-Jan-09 14:40:46] Total params: 31031685

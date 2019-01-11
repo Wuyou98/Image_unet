@@ -16,8 +16,6 @@ from unet.data_utils import load_data, probe
 from tframe import Predictor
 
 import numpy as np
-from unet.membrane import labelVisualize
-
 
 from_root = lambda path: os.path.join(ROOT, path)
 
@@ -68,11 +66,5 @@ def activate(export_false=False):
     images = images.reshape([-1, 256, 256])
     viewer = ImageViewer(DataSet(features=images))
     viewer.show()
-    # flag_multi_class = False
-    # import skimage.io as io
-    # for i, item in enumerate(images):
-    #     img = labelVisualize(2, item) if flag_multi_class \
-    # else item[:, :, 0]
-    #     io.imsave(os.path.join("data", "%d_predicts.png" % i), img)
 
 console.end()
